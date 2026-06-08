@@ -1,1 +1,30 @@
+<html>
 
+<body>
+<h1 id="heading">Hello world</h1>
+<button id="my-button">MyButton</button>
+<ul id="my-list">
+</ul>
+<button id="add-data">Add Data?</button>
+<textarea id="user-input" rows="4" cols="40" placeholder="Enter a veggie 😈"></textarea>
+<script>
+const button = document.getElementById('my-button');
+const head = document.getElementById('heading');
+const button_add = document.getElementById('add-data');
+const list = document.getElementById('my-list');
+const textarea = document.getElementById('user-input');
+
+button.addEventListener('click', () => {
+    console.log("hello world");
+    head.innerText = "Moi maailma";
+});
+
+button_add.addEventListener('click', () => {
+    const item = document.createElement('li');
+    item.innerText = textarea.value;
+    list.appendChild(item);
+    textarea.value = "";
+});
+</script>
+</body>
+</html>
