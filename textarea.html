@@ -1,0 +1,32 @@
+<html>
+<body>
+
+    <h2>Leave a Comment</h2>
+    
+    <textarea id="user-message" rows="4" cols="40" placeholder="Type your message here..."></textarea>
+    
+    <br><br>
+    <button id="submit-btn">Submit Comment</button>
+
+    <h3>Your Submitted Message:</h3>
+    <p id="display-output" style="color: blue; font-style: italic;"></p>
+
+    <script>
+        const button = document.getElementById('submit-btn');
+        const textarea = document.getElementById('user-message');
+        const output = document.getElementById('display-output');
+
+        button.addEventListener('click', () => {
+            // 2. Use .value (NOT .innerText) to get what the user typed
+            const userText = textarea.value; 
+            
+            // 3. Display it on the page
+            output.innerText = userText;
+            
+            // Optional: Clear the textarea box after submitting
+            textarea.value = ""; 
+        });
+    </script>
+
+</body>
+</html>
