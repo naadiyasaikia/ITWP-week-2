@@ -2,7 +2,7 @@ const add_user = document.getElementById('input-username');
 const add_email = document.getElementById('input-email');
 const add_image = document.getElementById('input-image');
 const append_data = document.getElementById('submit-data');
-const admin_checkbox = document.getElementById('admin-check');
+const admin_checkbox = document.getElementById('input-admin');
 const table = document.getElementById('data-table');
 const empty_btn = document.getElementById('empty-table');
 
