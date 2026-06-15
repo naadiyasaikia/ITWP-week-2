@@ -92,8 +92,3 @@ empty_btn.addEventListener('click', () => {
         table.deleteRow(1);
     }
 });
-
-const PORT = 1234;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
